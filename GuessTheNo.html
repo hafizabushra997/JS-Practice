@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The No</title>
+</head>
+<body>
+    <script>
+    // // This program give only 10 attempts to try
+    // let userInput
+    // let check
+    //    let correctNo=Math.floor(Math.random()*10)+1
+    //    console.log(correctNo);
+       
+    //    for (let index = 0; index < 10; index++) {
+    //     userInput=Number(prompt('Guess the correct number from 1-10'))
+    //     if (userInput===correctNo) {
+    //         console.log('Great!👍');
+    //         break;
+            
+    //     } else {
+    //         console.log('Try Again!😢');
+    //         continue;
+    //     }
+        
+    //    }
+   
+    // This program give unlimited attempts to try
+    let userInput;
+let correctNo = Math.floor(Math.random() * 10) + 1;
+console.log(correctNo); 
+
+while (true) {
+    userInput = Number(prompt("Guess the correct number (1-10):"));
+
+    if (userInput === correctNo) {
+        console.log("Great! 👍 You guessed it!");
+        break;
+    } else {
+        console.log("Try Again! 😢");
+    }
+}
+
+    
+    </script>
+</body>
+</html>
