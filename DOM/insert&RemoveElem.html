@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">I'm a box</div>
+    </div>
+    <script>
+        let container=document.querySelector('.container')
+        let box=document.querySelector('.box')
+        console.log(container.innerHTML);
+        console.log(container.innerText);
+        console.log(container.outerHTML);
+        // box.hidden=true
+
+        // Change any webpage content on runtime
+        // document.designMode='on'
+
+        let div =  document.createElement('div')
+        div.innerHTML=`I am box2. Here is my content`
+        div.setAttribute('class','box2')
+        container.append(div)
+        box.remove()
+        
+    </script>
+</body>
+</html>

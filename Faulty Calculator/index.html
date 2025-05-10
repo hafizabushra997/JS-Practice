@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+</head>
+<body>
+    <script>
+        // Generate Random No from 1-100
+        let randNo=Math.floor(Math.random()*100)+1
+        console.log(randNo);
+        
+        let a=Number(prompt('Enter 1st no'))
+        let b=Number(prompt('Enter 2nd no'))
+        let operator=prompt('Which operation you want to perform here (+, -, /, *)?')
+        if (randNo>10) {
+            if (operator=='+') {
+            console.log(`Sum = ${a+b}`);   
+        }
+        else if (operator=='-') {
+            console.log(`Subtraction = ${a-b}`);   
+        }
+        else if (operator=='/') {
+            console.log(`Division = ${a/b}`);   
+        }
+        else if (operator=='*') {
+            console.log(`Multiplication = ${a*b}`);   
+        }
+        else{
+            console.log('Wrong Operation');
+            
+        }
+        }
+        else if(randNo<=10){
+            if (operator=='+') {
+            console.log(`Sum = ${a-b}`);   
+        }
+        else if (operator=='-') {
+            console.log(`Subtraction = ${a+b}`);   
+        }
+        else if (operator=='/') {
+            console.log(`Division = ${a*b}`);   
+        }
+        else if (operator=='*') {
+            console.log(`Multiplication = ${a/b}`);   
+        }
+        else{
+            console.log('Wrong Operation');
+            
+        }
+        }
+        
+        
+    </script>
+</body>
+</html>
